@@ -1,0 +1,184 @@
+.cart-div {
+    padding: 40px 0px;
+
+    .bread-div {
+        ul {
+            list-style: none;
+            padding: 0;
+
+            div {
+                display: flex;
+                gap: 10px;
+
+                li {
+                    font-weight: 500;
+                    font-size: 14px;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--green);
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+
+                    svg {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            h3 {
+                font-size: 14px;
+                margin-top: 8px;
+                color: var(--grey);
+                font-weight: 500;
+
+                span {
+                    color: var(--green);
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            color: var(--grey);
+            display: flex;
+            align-items: center;
+            transition: all 0.3s linear;
+
+            &:hover {
+                color: var(--green);
+            }
+
+            svg {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .table-responsive {
+        margin-top: 20px;
+
+        table {
+            thead {
+                background: var(--light-grey);
+
+                th {
+                    padding: 10px;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        padding: 10px;
+                        text-align: center;
+                        vertical-align: middle;
+
+                        .img-div {
+                            gap: 10px;
+
+                            .prod-img {
+                                img {
+                                    width: 100px;
+                                    border: 1px solid var(--light-grey);
+                                    border-radius: 10px;
+                                }
+                            }
+
+                            .description {
+                                a {
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: var(--black);
+                                    margin: 0;
+                                    transition: all 0.3s linear;
+                                    text-decoration: none;
+
+                                    &:hover {
+                                        color: #ffbf40;
+                                    }
+                                }
+                            }
+                        }
+                        .unit-price{
+                            color: var(--grey);
+                            font-weight: 600;
+                            font-size: 19px;
+                            margin: 0;
+                        
+                        }
+
+                        .input-increment{
+                            input{
+                                height: 42px;
+                                border: 1px solid #3ab87d;
+                            }
+                            .arrow-btn{
+                                right: 12px;
+                                button{
+                                    svg{
+                                        color: var(--green);
+                                    }
+                                }
+                            }
+                        }
+
+                        .sub-total{
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: var(--green);
+                            margin: 0;
+                        }
+                        .delete-icon{
+                            color: red;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .total-bill{
+        background: var(--white);
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+        border: 1px solid #ececec ;
+        div{
+            margin-bottom: 10px;
+            h6{
+                color: var(--grey);
+                font-size: 13px;
+                font-weight: 600;
+                margin: 0;
+            }
+            h4{
+                margin: 0;
+                font-size: 16px;
+                color: var(--green);
+                font-weight: 600;
+            }
+        }
+
+        button{
+            width: 100%;
+            border: 1px solid var(--green);
+            background: var(--green);
+            transition: all 0.3s linear;
+            color: var(--white);
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            &:hover{
+                background: none;
+                color: var(--green);
+            }
+        }
+    }
+}

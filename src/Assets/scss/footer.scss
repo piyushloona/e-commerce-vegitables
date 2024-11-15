@@ -1,0 +1,93 @@
+.footer{
+    .best-price{
+        display: flex;
+        justify-content: space-between;
+        .delivery{
+            background: #F4F6FA;
+            padding: 20px;
+            border-radius: 10px;
+
+            img{
+                height: 45px;
+                margin-right: 10px;
+            }
+            .price-heading{
+                h4{
+                    font-size: 15px;
+                    margin: 0;
+                    font-weight: 600;
+                }
+                p{
+                    margin: 0;
+                    color: var(--grey);
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+
+
+    .down-footer{
+        background: #f4f6fa;
+        padding: 20px 20px;
+        border-radius: 10px;
+        .address-footer{
+            img{
+                width: 150px;
+            }
+            .awesome{
+                margin-top: 10px;
+                font-size: 12px;
+                font-weight: 500;
+                color: var(--black);
+            }
+            .location{
+                p{
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: var(--black);
+                    svg{
+                        color: var(--green);
+                        margin-right: 10px;
+                    }
+                    .email{
+                        transform: rotate(320deg);
+                    }
+                }
+            }
+        }
+
+
+        .list-items{
+            ul{
+                list-style: none;
+                padding: 0;
+                h2{
+                    color: var(--black);
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                li{
+                    padding: 4px 0px;
+
+                    a{
+                        text-decoration: none;
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: var(--black);
+                        transition: all 0.3s linear;
+                    }
+                    &:hover{
+                        a{
+                            color: var(--green);
+                           margin-left: 10px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

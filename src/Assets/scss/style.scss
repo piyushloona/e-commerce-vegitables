@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import './variable.scss';
+@import './header.scss';
+@import './nav-down.scss';
+@import './banner.scss';
+@import './home.scss';
+@import './categoryproduct.scss';
+@import './footer.scss';
+@import './listing.scss';
+@import './productdetails.scss';
+@import './cart.scss';
+
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input-increment{
+  display: flex;
+  position: relative;
+  input{
+      width: 71px;
+      border: 1px solid #c8c2c2;
+      border-radius: 5px;
+      text-align: center;
+      padding-right: 21px;
+      padding-left: 12px;
+  }
+  .arrow-btn{
+      display: flex;
+      flex-direction: column-reverse;
+      position: absolute;
+      right: -4px;
+       top: -1px;
+      button{
+          border: none;
+          background: none;
+          color: var(--grey);
+          font-size: 14px;
+          height: 18px;
+          svg{
+              font-size: 20px;
+          }
+      }
+  }
+}
+
+
+.star{
+  svg{
+      color: #fec041;
+      font-size: 14px;
+  }
+  p{
+      color: var(--grey);
+      font-size: 12px;
+      margin-left: 6px !important;
+      margin: 0;;
+      font-weight: 500;
+  }
+}

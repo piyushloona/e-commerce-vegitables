@@ -1,0 +1,362 @@
+.categories {
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+
+        li {
+            a {
+                text-decoration: none;
+                color: var(--black);
+                transition: all 0.3s linear;
+                font-size: 14px;
+                font-weight: 500;
+
+            }
+
+            &:hover {
+                a {
+                    color: var(--green);
+                }
+            }
+        }
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+.first-onion {
+    img {
+        width: 100%;
+
+    }
+}
+
+
+.product-section {
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .product {
+        width: 18%;
+        border: 1px solid #ececec;
+        border-radius: 10px;
+        padding: 15px;
+
+        .image-product {
+            position: relative;
+            text-align: center;
+
+            img {
+                width: 70%;
+                margin: auto;
+                cursor: pointer;
+            }
+            .wishlist-icon{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: var(--white);
+                border: 1px solid #ececec;
+                border-radius: 6px;
+                opacity: 0;
+                transition: all 0.2s linear;
+                visibility: hidden;
+
+                svg{
+                    color: var(--green);
+                    padding: 4px;
+                }
+                .compare-icon{
+                    border-left: 1px solid #ececec;
+                    border-right: 1px solid #ececec;
+
+                }
+                
+            }
+        }
+
+        .snack {
+            color: var(--grey);
+            margin-bottom:5px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .seeds{
+            font-size: 12px;
+            font-weight: 700;
+            margin: 0;
+        }
+     
+        .nest{
+            font-size: 12px;
+            span{
+                color: var(--green);
+            }
+        }
+
+        .price{
+            .dollar{
+                h6{
+                    color: var(--green);
+                    font-size: 15px;
+                    font-weight: 900;
+                    margin: 0;
+                }
+                p{
+                  margin: 0;
+                  margin-left: 8px !important;
+                  color: var(--grey);
+                  text-decoration: line-through;
+                  font-size: 12px;
+                }
+            }
+            .add-btn{
+                background-color:var(--green);
+                padding: 5px 10px;
+                color: var(--white);
+                border: none;
+                font-size: 10px;
+                border-radius: 5px;
+                font-weight: 500;
+                svg{
+                    font-size: 15px
+                };
+            }
+        }
+
+        &:hover{
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+            .wishlist-icon{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+    }
+}
+.sale-product{
+   
+    img{
+        width: 88px;
+        height: 88px;
+        border-radius: 10px;
+    }
+    .top-selling{
+        gap: 10px;
+        .description{
+            .seeds{
+                font-size: 12px;
+                font-weight: 700;
+                margin: 0;
+            }
+            .star{
+                svg{
+                    color: #fec041;
+                    font-size: 14px;
+                }
+                p{
+                    color: var(--grey);
+                    font-size: 12px;
+                    margin-left: 6px !important;
+                    margin: 0;;
+                    font-weight: 500;
+                }
+            }
+          
+    
+            .price{
+                margin-top: 10px;
+                .dollar{
+                    h6{
+                        color: var(--green);
+                        font-size: 15px;
+                        font-weight: 900;
+                        margin: 0;
+                    }
+                    p{
+                      margin: 0;
+                      margin-left: 8px !important;
+                      color: var(--grey);
+                      text-decoration: line-through;
+                      font-size: 12px;
+                    }
+                }
+                .add-btn{
+                    background-color:var(--green);
+                    padding: 5px 10px;
+                    color: var(--white);
+                    border: none;
+                    font-size: 10px;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    svg{
+                        font-size: 15px
+                    };
+                }
+            }
+        }
+    }
+}
+
+
+.Selling{
+    .row{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cdd1d9;
+    }
+}
+
+
+
+
+.product {
+    width: 18%;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    padding: 15px;
+
+    .image-product {
+        position: relative;
+        text-align: center;
+
+        img {
+            width: 70%;
+            margin: auto;
+            cursor: pointer;
+        }
+        .wishlist-icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--white);
+            border: 1px solid #ececec;
+            border-radius: 6px;
+            opacity: 0;
+            transition: all 0.2s linear;
+            visibility: hidden;
+
+            svg{
+                color: var(--green);
+                padding: 4px;
+            }
+            .compare-icon{
+                border-left: 1px solid #ececec;
+                border-right: 1px solid #ececec;
+
+            }
+            
+        }
+    }
+
+    .snack {
+        color: var(--grey);
+        margin-bottom:5px;
+        font-size: 11px;
+        font-weight: 500;
+    }
+    .seeds{
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .star{
+        svg{
+            color: #fec041;
+            font-size: 14px;
+        }
+        p{
+            color: var(--grey);
+            font-size: 12px;
+            margin-left: 6px !important;
+            margin: 0;;
+            font-weight: 500;
+        }
+    }
+    .nest{
+        font-size: 12px;
+        span{
+            color: var(--green);
+        }
+    }
+
+    .price{
+        .dollar{
+            h6{
+                color: var(--green);
+                font-size: 15px;
+                font-weight: 900;
+                margin: 0;
+            }
+            p{
+              margin: 0;
+              margin-left: 8px !important;
+              color: var(--grey);
+              text-decoration: line-through;
+              font-size: 12px;
+            }
+        }
+        .add-btn{
+            background-color:var(--green);
+            padding: 5px 10px;
+            color: var(--white);
+            border: none;
+            font-size: 10px;
+            border-radius: 5px;
+            font-weight: 500;
+            svg{
+                font-size: 15px
+            };
+        }
+    }
+
+    &:hover{
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+        .wishlist-icon{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+}
+
+
+
+.sale-title{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 14px;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: "";
+        height: 1px;
+        background:#ececec;
+        width: 100%;
+        bottom: 0px;
+        left: 0;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        height: 1px;
+        background:var(--green);
+        width: 30%;
+        bottom: 1px;
+        left: 0;
+        z-index: 99;
+    }
+}

@@ -1,0 +1,100 @@
+.nav-down{
+    height: 53px;
+    border-top: 1px solid #e4dfdf;
+    border-bottom: 1px solid #e4dfdf;
+    .first-col-nav{
+        button{
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+    .second-col-nav{
+        ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+            li{
+                padding: 13px 17px;
+                position: relative;
+                a{
+                    text-decoration: none;
+                    white-space: nowrap;
+                    color: var(--black);
+                    font-size: 14px ;
+                    font-weight: 500;
+                    transition: all 0.3s linear;
+                    &:hover{
+                        color: var(--green);
+                    }
+                    svg{
+                        font-size: 17px;
+                    }
+                }
+                .dropdown-menu-page{
+                    position: absolute;
+                    top: 120%;
+                    left: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.3s linear;
+                    z-index: 1000;
+                    ul{
+                        flex-direction: column;
+                        background: white;
+                        box-shadow: 0px 0px 5px #cabebe;
+                        padding: 10px 0px;
+                        width: 200px;
+
+                        li{
+                            padding: 5px 17px ;
+                            a{
+                                text-decoration: none;
+                                white-space: nowrap;
+                                color: var(--grey);
+                                font-size: 13px ;
+                                font-weight: 500;
+                                transition: all 0.3s linear;
+                                display: block;
+                                &:hover{
+                                    color: var(--green);
+                                }
+                                svg{
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    .dropdown-menu-page{
+                        opacity: 1;
+                        visibility: visible;
+                        top: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .third-col-nav{
+        img{
+            height: 32px;
+            width: 32px;
+            margin-right: 9px;
+        }
+        div{
+            text-align: end;
+            h3{
+                font-size: 18px;
+                font-weight: 700;
+                color: var(--green);
+            }
+            p{
+                font-size: 10px;
+                color: var(--grey);
+                font-weight: 600;
+            }
+        }
+    }
+}

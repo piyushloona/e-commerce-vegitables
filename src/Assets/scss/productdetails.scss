@@ -1,0 +1,197 @@
+.product-detail{
+    .row{
+        .left-product-detail{
+            padding: 10px 10px;
+            gap: 10px;
+
+            .image-zoom{
+                img{
+                    width: 100% ;
+                }
+            }
+            .right-desc{
+                padding: 10px 10px;
+                .sale{
+                     color: #f74b81;
+                    background: #fde0e9;
+                    padding: 8px 12px;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    font-family: "Quicksand", sans-serif;
+
+                }
+                h3{
+                    font-family: "Quicksand", sans-serif;
+                    color: #253D4E;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    margin-top: 10px;
+                }
+                .star{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    .star-icon{
+                        color: #fec041;
+                        svg{
+                            font-size: 12px;
+                            font-weight: 800;
+                        }
+                    }
+                    p{
+                        margin: 0;
+                        font-size: 13px;
+                        color: var(--grey);
+                        font-weight: 600;
+                    }
+                }
+                .dollar{
+                    gap: 10px;
+                    align-items: center;
+                    h4{
+                        font-size: 31px;
+                        text-decoration: none;
+                        font-weight: 600;
+                        color: var(--green);
+                        margin: 0;;
+                    }
+                    .rating{
+                        span{
+                        font-size: 12px;
+                        font-weight: 600;
+                         display: block;
+                        color: #FDC040;
+                        }
+                        h5{
+                            text-decoration: line-through;
+                            color: #B6B6B6;
+                             font-size: 17px;
+                            font-weight: 700;
+                            display: block;
+                        }
+                    }
+                }
+                p{
+                    color: var(--grey);
+                    font-size: 13px;
+                    width: 74%;
+                    margin-bottom: 16px;
+                }
+                .weight{
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+                    gap: 16px;
+                    align-items: center;
+                    h4{
+                        color: var(--grey);
+                        color: var(--grey);
+                        font-size: 11px;
+                        margin: 0;
+                        font-weight: 700;
+                    }
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: var(--grey);
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                .btn-input{
+                    display: flex;
+                    gap: 10px;
+                  
+
+                    .add-to-cart{
+                        background: var(--green);
+                        padding: 10px 20px;
+                        border: none;
+                        color: var(--white);
+                        border-radius: 5px;
+                        font-size: 13px;
+                        border: 1px solid var(--green);
+                        transition: all 0.3s linear;
+                        &:hover{
+                            background: none;
+                            color: var(--green);
+                        }
+                        svg{
+                            font-size: 16px;
+                        }
+                    }
+                    .fav-icon{
+                        background: var(--green);
+                        padding: 5px 8px;
+                        border: none;
+                        color: var(--white);
+                        border-radius: 5px;
+                        font-size: 11px;
+                        border: 1px solid var(--green);
+                        transition: all 0.3s linear;
+                        &:hover{
+                            background: none;
+                            color: var(--green);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tabs-system{
+        .col-set{
+        border: 1px solid #e6e3e3;
+        margin: 0 25px;
+        border-radius: 14px;
+        .react-tabs{
+            padding: 40px ;
+            .react-tabs__tab-list{
+                display: flex;
+                padding: 0;
+                list-style: none;
+                gap: 20px;
+                padding: 10px 0;
+               .react-tabs__tab{
+                border: 1px solid #e8e8e8;
+                padding: 8px 10px;
+                border-radius: 7px;
+                font-size: 12px;
+                font-weight: 600;
+                cursor: pointer;
+                &:focus{
+                    outline: none;
+                }
+               }
+               .react-tabs__tab--selected{
+                background: var(--white);
+                box-shadow: 0px 2px 3px #d9d4d4;
+                color: var(--green);
+            }
+            }
+
+            .react-tabs__tab-panel{
+                p{
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    margin-bottom: 5px;
+                    color: #7E7E7E;
+                }
+                h2{
+                    font-family: "Quicksand", sans-serif;
+                    color: #253D4E;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    margin-top: 10px;
+                    font-size: 24px;
+                }
+            }
+           
+        }
+        }
+    }
+}

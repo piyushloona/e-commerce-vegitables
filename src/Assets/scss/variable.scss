@@ -1,0 +1,10 @@
+:root{
+    --black : #000;
+    --grey:#7e7e7e;
+    --green:#3ab87d;
+    --white:#fff;
+    --light-grey:#e5e8ec;
+}
+.bg-success{
+    background-color: var(--green) !important;
+}

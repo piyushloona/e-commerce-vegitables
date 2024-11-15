@@ -1,0 +1,20 @@
+.c-product{
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    img{
+        width: 52px;
+        margin-bottom: 18px;
+    }
+    h5{
+        color: var(--black);
+        font-weight: 600;
+        font-size: 13px;
+        margin: 0;
+    }
+    p{
+        color: var(--grey);
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
